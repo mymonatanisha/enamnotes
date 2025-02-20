@@ -1,0 +1,104 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: #333;
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: url('images/hero-bg.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+}
+
+.hero .btn {
+    background: #ff6f61;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Sections */
+section {
+    padding: 50px;
+    text-align: center;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.project-card {
+    background: #f4f4f4;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+/* Contact Form */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+}
+
+input, textarea {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background: #333;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+
+    form {
+        width: 90%;
+    }
+}
